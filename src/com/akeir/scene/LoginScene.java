@@ -5,6 +5,7 @@ import com.akeir.scene.builder.LoginSceneBuilder;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class LoginScene extends SceneBase{
@@ -13,12 +14,13 @@ public class LoginScene extends SceneBase{
 	private Label lbUser;
 	private TextField txtUser;
 	private Label lbPassword;
-	private TextField txtPassword;
+	private PasswordField txtPassword;
 	private Button btnLogin;
 	private Button btnExit;
 	
 	public LoginScene()
 	{
+		super();
 		builder = new LoginSceneBuilder(this);
 		executeBuild();
 	}
@@ -70,12 +72,12 @@ public class LoginScene extends SceneBase{
 		this.lbPassword = lbPassword;
 	}
 
-	public TextField getTxtPassword() 
+	public PasswordField getTxtPassword()
 	{
 		return txtPassword;
 	}
 
-	public void setTxtPassword(TextField txtPassword)
+	public void setTxtPassword(PasswordField txtPassword)
 	{
 		this.txtPassword = txtPassword;
 	}

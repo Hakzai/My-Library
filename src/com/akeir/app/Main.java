@@ -1,5 +1,6 @@
 package com.akeir.app;
 
+import com.akeir.scene.LibraryScene;
 import com.akeir.scene.LoginScene;
 
 import javafx.application.Application;
@@ -14,16 +15,17 @@ public class Main extends Application {
 	{
 		boolean isLoggedIn = true;
 		
-		Parent root = new LoginScene();
+//		Parent root = new LoginScene(); // TODO: Finalize this login screen logic after finishing the app
+		Parent root = new LibraryScene();
 		Scene scene = new Scene(root);
 		stage.setResizable(false);
-		stage.setTitle("My Library Login");
+//		stage.setTitle("My Library Login");
+		stage.setTitle("My Library -- by Akeir");
 		stage.setScene(scene);
 		stage.show();
-		
+
 		if(isLoggedIn)
 		{
-//			stage.setTitle("My Library -- by Akeir");
 		}
 	}
 
